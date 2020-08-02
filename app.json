@@ -13,14 +13,18 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
-    "assetBundlePatterns": [
-      "**/*"
-    ],
+    "assetBundlePatterns": ["**/*"],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": false,
+      "infoPlist": {
+        "NSCameraUsageDescription": "This app uses the camera to scan barcodes on medical stickers that were provided to be scanned in case of emergency."
+      }
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "android": {
+      "permissions": ["CAMERA"]
     }
   }
 }
