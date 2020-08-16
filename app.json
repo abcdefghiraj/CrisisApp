@@ -1,10 +1,11 @@
 {
   "expo": {
-    "name": "CrisisApp",
+    "name": "Crisis App",
     "slug": "CrisisApp",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
+    "privacy":"public",
     "splash": {
       "image": "./assets/splash.png",
       "resizeMode": "contain",
@@ -15,9 +16,10 @@
     },
     "assetBundlePatterns": ["**/*"],
     "ios": {
-      "supportsTablet": false,
+      "bundleIdentifier": "com.getcrisiscode.crisisapp",
+      "supportsTablet": true,
       "infoPlist": {
-        "NSCameraUsageDescription": "This app uses the camera to scan barcodes on medical stickers that were provided to be scanned in case of emergency."
+        "NSCameraUsageDescription": "This app uses camera to scan barcodes on medical stickers that were provided to be scanned in case of emergency."
       }
     },
     "web": {
